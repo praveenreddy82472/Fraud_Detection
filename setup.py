@@ -5,7 +5,7 @@ from typing import List
 REQUIREMENT_FILE_NAME = "requirements.txt"
 HYPHEN_E_DOT = "-e ."  #install our source code as library(-e is editable or install)
 
-def get_requirements()->list[str]:
+def get_requirements()->List[str]:
     
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         requirement_list = requirement_file.readlines()
